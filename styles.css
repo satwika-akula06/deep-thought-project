@@ -1,0 +1,685 @@
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  color: #191c1f;
+}
+
+/* -------- HEADER -------- */
+.dt-header {
+  height: 56px;
+  border-bottom: 1px solid #ddd;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.dt-logo {
+  height: 36px;
+  margin-right: 14px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-icon {
+  background: #0057ff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.notification-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.notification-wrapper .notif-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  background: #ff325a;
+  border-radius: 50%;
+  border: 2px solid #0057ff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header-avatar img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.more-menu {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.more-menu svg {
+  width: 20px;
+  height: 20px;
+  fill: #0057ff; /* Blue icon */
+}
+
+.more-menu:hover {
+  background: #f0f0f0;
+}
+
+/* -------- SIDEBAR -------- */
+.dt-app-container {
+  display: flex;
+  height: calc(100vh - 56px);
+}
+
+.journey-board {
+  width: 325px;
+  background: #fff;
+  padding: 0;
+  border-right: 1.4px solid #ddd;
+  box-shadow: 2px 0 11px #e2e2e28a;
+  border-radius: 0 26px 0 0;
+  min-height: 100vh;
+}
+
+.journey-board-curved {
+  border-top-right-radius: 24px;
+}
+
+.journey-board-header {
+  background: #191c1f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.27rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0 24px 0 0;
+  padding: 17px 25px;
+  justify-content: space-between;
+}
+
+.journey-board-header .journey-back {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.journey-list {
+  list-style: none;
+  margin: 22px 30px 0 38px;
+  padding: 0;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.11rem;
+  font-family: Poppins, sans-serif;
+}
+
+.sidebar-bullet-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 22px 30px 0 38px;
+}
+
+.sidebar-bullet-list li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 1.11rem;
+  cursor: pointer;
+}
+
+.sidebar-bullet-list li.active {
+  color: #000;
+  font-weight: 700;
+}
+
+.sidebar-bullet-list li:hover {
+  color: #000; /* black on hover */
+}
+
+/* -------- MAIN CONTENT -------- */
+.main-content {
+  flex: 1;
+  background: #fafafa;
+  padding: 56px 60px 40px 60px;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.heading-blue {
+  color: #0057ff;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 38px 36px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  min-width: 330px;
+  max-width: 550px;
+}
+
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-row .card {
+  flex: 1;
+  min-width: 300px;
+}
+
+.card-header .card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spacing between arrow and heading */
+}
+
+.sa4method .card-header .arrow-up,
+.sa4method .collapsible-btn .caret {
+  display: inline-block;
+  margin-right: 8px;
+  transform: rotate(0deg); /* upwards */
+}
+
+.card-header {
+  background: #191c1f;
+  color: #fff;
+  border-radius: 18px 18px 0 0;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-desc {
+  padding: 15px 25px 12px 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #191c1f;
+}
+
+.info-btn {
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------- PROMPT BOX -------- */
+.prompt-box {
+  background-color: #dde2e6;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 30px;
+  color: #191c1f;
+}
+
+.prompt-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.prompt-body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* -------- THREADBUILD -------- */
+.thread-section {
+  background: #fff;
+  border-radius: 0 0 18px 18px;
+}
+
+.thread-bar {
+  background: #fffddb;
+  border-radius: 7px 7px 0 0;
+  padding: 15px 30px;
+  font-size: 1.11rem;
+  font-weight: 700;
+  color: #181818;
+  border-bottom: 1.4px solid #ededed;
+}
+
+.thread-inputs {
+  display: flex;
+  gap: 22px;
+  padding: 18px 30px;
+}
+
+.threadbox,
+.interpbox {
+  background: #fff;
+  border-radius: 12px;
+  border: 1.6px solid #ebebeb;
+  flex: 1;
+  font-size: 1rem;
+  padding: 16px 11px;
+  min-height: 64px;
+  color: #191c1f;
+}
+
+.thread-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;  /* allow wrapping */
+  gap: 13px;
+  padding: 7px 30px 10px 30px;
+}
+
+.thread-toolbar img {
+  height: 25px;
+  width: 25px;
+}
+
+.thread-toolbar select {
+  min-width: 120px;
+  max-width: 150px;
+}
+
+.blue-btn {
+  background: #0057ff;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 10px 18px;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.summary-label {
+  color: #222;
+  font-weight: 600;
+  padding-left: 30px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.summary-box {
+  border-radius: 11px;
+  border: 1.3px solid #dadada;
+  font-size: 1rem;
+  background: #fafafa;
+  padding: 12px 13px;
+  margin: 0 30px 21px 30px;
+  min-height: 70px;
+}
+
+/* -------- STRUCTURE YOUR POINTERS -------- */
+.form-section {
+  padding: 0 22px 22px 22px;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 18px;
+  font-size: 1rem;
+  display: block;
+}
+
+.form-input {
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 11px 18px;
+  border: 1.5px solid #ebebeb;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.editor-toolbar {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  margin-bottom: 8px;
+}
+
+.toolbar-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 10px 16px 0 16px;
+  font-size: 16px;
+  color: #555;
+}
+
+.toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;  /* fix congestion */
+  gap: 8px;
+  padding: 10px 16px;
+}
+
+.toolbar-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.toolbar-actions button:hover {
+  background: #eee;
+}
+
+.paragraph-select {
+  background: #eee;
+  border-radius: 4px;
+  border: none;
+  padding: 4px 16px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ellipsis {
+  font-size: 20px;
+  color: #888;
+}
+
+.form-textarea {
+  min-height: 130px;
+  border-radius: 8px;
+  border: 1.5px solid #ebebeb;
+  outline: none;
+  background: #fff;
+  font-size: 1rem;
+  padding: 18px 22px;
+  width: 100%;
+  color: #191c1f;
+  resize: vertical;
+}
+
+/* -------- 4SA METHOD -------- */
+.collapsible-section {
+  margin-bottom: 16px;
+}
+
+.collapsible-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px 0;
+  gap:8px;
+}
+
+.collapsible-btn .arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #333;   /* vertical line */
+  border-bottom: 2px solid #333; /* diagonal line */
+  transform: rotate(-45deg);       /* down */
+  transition: transform 0.2s;
+}
+
+.collapsible-btn .arrow-up {
+  display: inline-block;
+  margin-right: 8px; /* space between arrow and heading */
+  transform: rotate(0deg); /* upwards arrow */
+}
+.collapsible-btn.active .arrow {
+  transform: rotate(135deg);     /* up */
+}
+
+.caret {
+  font-size: 1.1rem;
+  transition: transform 0.2s;
+}
+
+.collapsible-title {
+  font-weight: 500;
+}
+
+.collapsible-btn .caret {
+  font-size: 1.1rem;
+  margin-right: 12px;
+  transition: transform 0.2s;
+}
+
+.collapsible-btn.active .caret {
+  transform: rotate(-180deg);
+}
+
+.collapsible-panel {
+  display: block;
+  overflow: hidden;
+  background: #fcfcfc;
+  border-bottom: 1px solid #ececec;
+  border-radius: 0 0 10px 10px;
+  padding: 15px 22px;
+  transition: max-height 0.4s ease;
+}
+
+.panel-content {
+  display: flex;  
+  flex:1;         /* make content and link inline */
+  justify-content: space-between; /* text on left, link on right */
+  align-items: center;
+  color: #252525;
+  margin-bottom: 9px;
+}
+
+.panel-content-wrapper {
+  display: flex;
+  justify-content: space-between; /* text left, link right */
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.panel-text {
+  flex: 1;
+  margin-right: 10px; /* spacing between text and link */
+}
+
+/*---4sa method---*/
+.example-box {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* -------- FLOATING ICONS -------- */
+.floating-icons {
+  position: fixed;
+  right: 40px;
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  z-index: 1000;
+}
+
+.icon-circle {
+  background-color: #0057ff;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 12px rgba(0, 0, 255, 0.4);
+  cursor: pointer;
+}
+
+.icon-circle img {
+  width: 34px;
+  height: 34px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.submit-task-btn {
+  background: #0057ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-task-btn:hover {
+  background: #0041c4;
+}
+
+.see-more-link {
+  display: inline-block;      /* keeps it like a link, not full-width */
+  font-size: 0.9rem;         /* slightly smaller text */
+  font-weight: 500;
+  color: #888888;             /* Figma blue */
+  text-decoration: underline; /* classic link underline */
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 0;
+  line-height: 1.4;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.see-more-link:hover {
+    text-decoration: none;      /* optional: remove underline on hover */
+
+}
+
+/* Technical Project Image */
+.technical-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 260px;
+  object-fit: contain;
+}
+
+/* Notice Board */
+.horizontal-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: max-content;
+  top: 200px;       /* default position if JS hasn't run */
+  right: 20px;
+  z-index: 10;      /* ensures it's above content */
+}
+
+.right-sidebar-border {
+   background: black;
+  color: white;
+  width: 70px;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Arial, sans-serif;
+  padding-top: 10px;
+  position: absolute;      /* same as white rectangle */
+  top: 200px;  
+  height: ;   
+}
+
+.notice-text {
+  writing-mode: vertical-rl;  /* makes text flow vertically */
+  text-orientation: upright;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+
+.close-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.white-rectangle {
+  background: white;
+  width: 120px;
+  border-radius: 0 20px 20px 0;
+  height: 300px;    /* default height */
+  top: 200px;       /* default top */
+  position: absolute;
+}

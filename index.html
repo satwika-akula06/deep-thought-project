@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deep Thought Project Management</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="dt-header">
+    <div class="header-left">
+      <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="Deep Thought Logo" class="dt-logo" />
+    </div>
+    <div class="header-actions">
+      <span class="header-icon"><img src="https://img.icons8.com/ios-filled/36/ffffff/home.png" alt="home" /></span>
+      <span class="header-icon"><img src="https://img.icons8.com/ios-filled/36/ffffff/maintenance.png" alt="tools" /></span>
+      <span class="header-icon notification-wrapper">
+  <img src="https://img.icons8.com/ios-filled/36/ffffff/appointment-reminders.png" alt="bell" />
+  <span class="notif-badge"></span>
+</span>
+
+      <span class="header-avatar"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="avatar" /></span>
+      <span class="more-menu">
+  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" >
+    <circle cx="12" cy="5" r="2"/>
+    <circle cx="12" cy="12" r="2"/>
+    <circle cx="12" cy="19" r="2"/>
+  </svg>
+  
+</span>
+
+    </div>
+  </header>
+
+  <div class="dt-app-container">
+    <aside class="journey-board journey-board-curved">
+      
+      <div class="journey-board-header">
+        <span>Journey Board</span>
+        <button class="journey-back">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="19" y1="12" x2="5" y2="12"/> <!-- horizontal line -->
+    <polyline points="12 19 5 12 12 5"/> <!-- arrowhead -->
+  </svg>
+</button>
+
+
+      </div>
+      
+      <ul class="journey-list" id="task-list">
+        
+      </ul>
+    </aside>
+    
+
+
+    <main class="main-content" id="main-content" role="main">
+      <div class="task-header">
+  <h2 class="heading-blue">Technical Project Management</h2>
+  <button class="submit-task-btn">Submit Task</button>
+</div>
+
+      <div class="prompt-box">
+        <div class="prompt-title">Explore the world of management</div>
+        <div class="prompt-body">
+          As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?
+        </div>
+      </div>
+
+      <div class="dashboard-cards">
+        <!-- Technical Project Management Card -->
+        <div class="card technical-project-management">
+          <div class="card-header">
+            Technical Project Management
+            <button class="info-btn" aria-label="Information">i</button>
+          </div>
+          <div class="card-desc">
+            <strong>Description:</strong> Story of Alignment Scope of Agility Specific Accountable Staggering Approach
+          </div>
+          <iframe width="100%" height="260" src="https://www.youtube.com/embed/bOBLQoIQf3w" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Threadbuild Card -->
+        <div class="card threadbuild">
+          <div class="card-header">
+            Threadbuild
+            <button class="info-btn" aria-label="Information">i</button>
+          </div>
+          <div class="card-desc">
+            <strong>Description:</strong> Watch the video and threadbuild, and jot out key threads while watching the video
+          </div>
+          <div class="thread-section">
+            <div class="thread-bar">
+                  <img class="arrow-icon" src="assets/images/Vector.svg" alt="Arrow" />
+
+              Thread A</div>
+            <div class="thread-inputs">
+              <div class="threadbox" contenteditable="true" aria-label="Sub thread 1" placeholder="Sub thread 1"></div>
+
+              <div class="interpbox" contenteditable="true" aria-label="Sub Interpretation 1" placeholder="Sub Interpretation 1"></div>
+            </div>
+            <div class="thread-toolbar">
+              <img src="https://img.icons8.com/ios-filled/24/000000/idea.png" alt="Idea" />
+              <img src="https://img.icons8.com/ios-filled/24/000000/topic.png" alt="Notes" />
+              <img src="https://img.icons8.com/ios-filled/24/000000/help.png" alt="Help" />
+              <img src="https://img.icons8.com/ios-filled/24/000000/plant-under-sun.png" alt="Growth" />
+              <select>
+                <option>Select Categ</option>
+                <option>Category 1</option>
+                <option>Category 2</option>
+              </select>
+              <select>
+                <option>Select Proces</option>
+                <option>Process 1</option>
+                <option>Process 2</option>
+              </select>
+            </div>
+            <button class="blue-btn">+ Sub-thread</button>
+            <div class="summary-label">Summary for Thread A</div>
+            <div class="summary-box" contenteditable="true" aria-label="Summary for Thread A"></div>
+          </div>
+        </div>
+
+        <!-- Structure Your Pointers Card -->
+        <div class="card structure-pointer">
+          <div class="card-header">
+            Structure your Pointers
+            <button class="info-btn" aria-label="Information">i</button>
+          </div>
+          <div class="card-desc">
+            <strong>Description :</strong> Write a 300 - 400 word article from your thread. Publish your understanding and showcase your understanding to the entire world
+          </div>
+          <hr class="divider">
+          <div class="form-section">
+            <label class="form-label" for="pointer-title">Title</label>
+            <input type="text" id="pointer-title" class="form-input"/>
+            <label class="form-label" for="pointer-content">Content</label>
+            <div class="editor-toolbar">
+    <div class="toolbar-menu">
+      <span>File</span>
+      <span>Edit</span>
+      <span>View</span>
+      <span>Insert</span>
+      <span>Format</span>
+      <span>Tools</span>
+      <span>Table</span>
+      <span>Help</span>
+    </div>
+    <div class="toolbar-actions">
+      <button title="Undo">&#8630;</button>
+      <button title="Redo">&#8631;</button>
+      <button class="paragraph-select">Paragraph</button>
+      <span class="ellipsis">&#8942;</span>
+    </div>
+  </div>
+            
+  <textarea id="pointer-content" class="form-textarea"></textarea>
+  </div>
+</div>
+
+        <!-- 4SA Method Card -->
+        <div class="card sa4method">
+  <div class="card-header">
+    4SA Method
+    <button class="info-btn" aria-label="Information">i</button>
+  </div>
+  <div class="card-desc">
+    <strong>Description :</strong> To Explore more read more
+  </div>
+  <hr class="divider">
+
+  <!-- Introduction Section -->
+  <div class="collapsible-section">
+    <button class="collapsible-btn active">
+      <img class="arrow-icon" src="assets/images/Vector.svg" alt="Arrow" />
+      <span class="caret">&#9660;</span> Introduction
+    </button>
+    <div class="collapsible-panel" style="max-height:160px;">
+      <div class="panel-content">
+        The 4SA Method, How to bring an idea into progress ?
+      </div>
+      <a href="javascript:void(0)" class="see-more-link">See More</a>
+
+    </div>
+  </div>
+
+  <!-- Thread A Section -->
+  <div class="collapsible-section">
+    <button class="collapsible-btn active">
+      <img class="arrow-icon" src="assets/images/Vector.svg" alt="Arrow" />
+      <span class="caret">&#9660;</span> Thread A
+    </button>
+    <div class="collapsible-panel" style="max-height:220px;">
+      <div class="panel-content">
+        How are you going to develop your strategy? Which method are you going to use? What if the project is lengthy?
+      </div>
+      <a href="javascript:void(0)" class="see-more-link">See More</a>
+
+      <div class="example-box">
+        <strong>Example 1</strong>
+        <p>You have a concept, How will you put it into progress?</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+    </main>
+<div class="horizontal-container">
+  <div class="right-sidebar-border">
+    <div class="close-icon">&times;</div>
+    <div class="notice-text">Notice Board
+
+    </div>
+  </div>
+  <div class="white-rectangle"></div>
+</div>
+  <!-- ...other page content... -->
+
+  <div class="floating-icons">
+  <div class="icon-circle">
+    <img src="assets/images/questionmark.svg" alt="Help" />
+  </div>
+  <div class="icon-circle">
+    <img src="assets/images/meeting.svg" alt="Meeting" />
+  </div>
+  <div class="icon-circle">
+    <img src="assets/images/schedule.svg" alt="Calendar" />
+  </div>
+</div>
+
+
+</body>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
