@@ -1,10 +1,5 @@
 # Deep Thought Project Management
 
-![Project Screenshot](assets/images/screenshot-placeholder.png) 
-
-*Replace the above image with an actual screenshot of your app.*
-
----
 
 ## Overview
 
@@ -129,13 +124,4 @@ deep-thought-project/
 
 This project is licensed under the MIT License.  
 
----
 
-## Screenshots
-
-![Technical Project Management](assets/images/tech-card.png)  
-![Threadbuild](assets/images/threadbuild-card.png)  
-![Structure Your Pointers](assets/images/pointers-card.png)  
-![4SA Method](assets/images/4sa-card.png)
-
-*Replace these with actual screenshots of your app.*
